@@ -1,3 +1,8 @@
 @import url('https://fonts.google.com/specimen/Jacquard+12?query=pixel');
-	p{font-family: "Jacqard 12", "Times New Roman";}
+body {
+	font-family: "Jacqard 12", sans-serif;
+}
 
+head {
+        font-family: "Jacqard 12", sans-serif;
+}
