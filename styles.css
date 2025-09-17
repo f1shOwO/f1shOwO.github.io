@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-h1 {font-family: "Jacquard 12", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Jacquard 12", sans-serif;
 }
 	
-p {font-family: "Jersey 10", sans-serif;
-	font-size: 150%;
+p {
+	font-family: "Jersey 10", sans-serif;
 }
 
-body {background-color: rgb(253, 219, 101);
+body {
+	background-color: rgb(140, 225, 219);
+}
+
+img {
+	display:block;
+	margin: auto;
 }
