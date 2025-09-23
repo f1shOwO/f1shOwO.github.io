@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>How to use vim</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 style="text-align:center;">Welcome to your intoduction to vim!</h1>
+	<img src="media/vim.png" alt="vim" width="1000" height="600"> 
+	
+	<h2 style="text-align:center;">What is vim?</h2>
+		<p>Vim is a open source text editer for creating and editing text in terminal.
+		<br>Important thing to remember:</p>
+		<p style="text-indent: 2em;">Vim was made before the curser, so you will have to use your keyboard to move around and perform shortcuts.</p>
+		<h3>How to open vim:</h3>
+		<ol>
+			<li>Enter 'vim' into the command line</li>
+			<li>Enter the name of the file you want to name or create</li>
+				<ul>
+					<li>Ex: 'file.txt' or 'index.html'</li>
+				</ul>
+			<li>Press 'Enter' and your file will be automatically created and/or open in vim.</li>
+		</ol> 
+		<h3>Closing and saving your document in vim:</h3>
+		<ol> 
+			<li>Press the 'esc'key to exit any modes you may be in.</li>
+			<li>Press 'shift + :' on your keyboard to opent the vim command line.</li>
+			<li>Enter either 'w', 'wq', or 'q!' and press 'enter'.</li>
+		</ol>
+		<h3>Each input does a  different thing.</h3>
+		<ul>
+			<li>'w ' just saves the edits made without closing vim.</li>
+			<li>'wq' saves the edits made and closes vim.</li>
+			<li>'q!' closes vim without saving any edits made.</li>
+		</ul>
+	<p>Some noteable shortcuts to help you in vim:</p>
+	<kbd>v</kbd>
+		<p>Pressing 'v' while not in insert mode allows you to enter visual mode, letting you highlight text.</p>
+		<img src="media/vim2.png" alt="Highlight" width="800" height="500">
+<br>
+	<kbd>y</kbd>
+		<p>Pressing "y" while selecting text in visual mode allows you to 'yoink' the text, copying it to your vim clipboard. Note that the vim clipboard and your laptop clipboard are seperate from each other.</p>
+<br>
+	<kbd>p</kbd>
+		<p>Pressing 'p' allows you to paste whatever you have yoinked to your vim clipboard.</p>
+<br>
+	<kbd>u</kbd>
+		<p>Pressing 'u' undos the last edit you made to your file.</p>
+<br>
+<br>
+	<h3>Just a reminder!</h3>
+		<p>When setting up a .html file, there is a specific structure you need to follow.</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="language code here"&gt;
+&lt;head&gt;
+	&lt;title&gt;Title here!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Heading here!&lt;/h1&gt;
+	&lt;p&gt;Text here.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
