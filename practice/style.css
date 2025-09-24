@@ -9,3 +9,14 @@ img {
 	display: block;
 	margin: auto;
 }
+
+table, tr, th, td{
+	border: 1px solid;
+	text-align: center;
+	background-color: #b86fe8;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
