@@ -17,3 +17,12 @@ img {
 	display:block;
 	margin: auto;
 }
+
+table, th, td, tr {
+	border: 3px solid;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
