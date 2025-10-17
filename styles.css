@@ -1,21 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url(
+'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+@import url(
+'https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, th {
 	font-family: "Jacquard 12", sans-serif;
 }
 	
-p {
+p, a, td, li {
 	font-family: "Jersey 10", sans-serif;
-}
-
-body {
-	background-color: rgb(140, 225, 219);
-}
-
-img {
-	display:block;
-	margin: auto;
 }
 
 table, th, td, tr {
@@ -25,4 +18,8 @@ table, th, td, tr {
 
 table {
 	border-collapse: collapse;
+}
+
+th, td{
+	padding: 7px;
 }
