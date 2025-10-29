@@ -1,10 +1,10 @@
 # the image of sans
 
-! [sans](../media/images/sans.png)
+![sans](../media/images/sans.png)
 
 ## the drawling of sans
 
-! [sans.](../media/images/sans..jpeg)
+![sans.](../media/images/sans..jpeg)
 
 ### the code of sans
 
