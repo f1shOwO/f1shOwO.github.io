@@ -14,8 +14,7 @@ Complete this table with each of your messages. This should
 include the entire conversation - the messages that you sent
 and the messages that you received.
 
-[Document with encrypted text](https://docs.google.com/document/d/
-1o7jzGM0BWzv4xlEkbTsKW8zUSBLEl9XvYerYWYPpxhE/edit?usp=sharing)
+[Document with encrypted text UwU](https://docs.google.com/document/d/1o7jzGM0BWzv4xlEkbTsKW8zUSBLEl9XvYerYWYPpxhE/edit?usp=sharing)
 
 ## Part 3: Connection to TCP/IP Model
 
