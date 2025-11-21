@@ -3,11 +3,11 @@
 @import url(
 'https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-h1, h2, h3, h4, h5, h6, th {
+h1, h2, h3, h4, h5, h6, th, caption {
 	font-family: "Jacquard 12", sans-serif;
 }
 	
-p, a, td, li {
+p, a, td, li, button {
 	font-family: "Jersey 10", sans-serif;
 }
 
@@ -22,4 +22,41 @@ table {
 
 th, td{
 	padding: 7px;
+}
+
+@keyframes color-change {
+0% {
+	color: #ff0000;
+}
+
+16% {
+	color: #ffff00;
+}
+
+33% {
+	color: #00ff00;
+}
+
+49% {
+	color: #00ffff;
+}
+
+66% {
+	color: #0000ff;
+}
+
+82% {
+	color: #ff00ff;
+}
+
+100% { 
+	color: #ff0000;
+}
+}
+
+.color {
+	animation-name: color-change;
+	animation-duration: 100s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 }
