@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tree :3</title>
+	<link rel="icon" src="image/x-icon" href="../media/images/ash.ico"> 
+	<link rel="stylesheet" href="../styles.css">
+	<script src="../js/validate.js">
+	</script>
+<style>
+body{
+	background-image: linear-gradient(#ae6882, #ff6e56, #434670 );
+}
+
+#box{
+	width: 600px;
+	height: 80vh;
+	margin: auto;
+	position: relative;
+}
+
+#tree{
+	width: 0px;
+	height: 0px;
+	border-bottom: 70vh solid green;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+}
+
+#sergal{
+	width: 30px;
+	height: 30px;
+	background-image: linear-gradient(#FFFFFF, #FF0000);
+	position: absolute;
+	top: 250px;
+	left: 225px;
+}
+
+#protogen {
+	width: 50px;  
+	aspect-ratio: 1;
+	background: #F8CA00;
+	clip-path: polygon(50% 0,
+		calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+		calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+		calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+		calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))); 
+	top: 0px;
+	left: 275px;
+}
+
+</style>	
+</head>
+<body>
+	<h1>Tree UwU</h1>
+	<div id="box">
+		<div id="tree">
+			<div id="protogen">
+			</div>
+			<div id="sergal">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
