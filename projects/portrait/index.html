@@ -5,11 +5,83 @@
 </head>
 <body>
 	<h2>UwU</h2>
-	<canvas width=800 height=800 id="self"></canvas>
+	<canvas width=500 height=500 id="canvas"></canvas>
 <script>
-	// doodle stuff here	
-	
+	const canvas = document.getElementById("canvas");
+	const ctx = canvas.getContext("2d");	
 
+// doodle stuff here	
+	//Background
+	ctx.fillStyle = "#cecece";
+	ctx.fillRect(0,0,500,500);
+	
+	//leftbottem coat stuff
+	ctx.fillStyle = "#13376b";
+	ctx.strokeStyle = "#000000";
+	ctx.lineWidth = 4;
+	ctx.beginPath();
+	ctx.moveTo(0,400);
+	ctx.lineTo(40,350);
+	ctx.arc(50,350,10,0.9*Math.PI,1.6*Math.PI);
+	ctx.lineTo(130,250);
+	ctx.lineTo(100,290);
+	ctx.lineTo(100,300);
+	ctx.lineTo(175,350);
+	ctx.lineTo(185,345);
+	ctx.lineTo(175,501);
+	ctx.lineTo(0,501);
+	ctx.stroke();
+	ctx.fill();
+	
+	//left white sleeve things
+	ctx.fillStyle = "#ffffff";
+	ctx.lineWidth = 2;
+	ctx.beginPath();
+	ctx.moveTo(125,500);
+	ctx.lineTo(130,475);
+	ctx.arc(180,475,50,Math.PI,2*Math.PI);
+	ctx.lineTo(230,501);
+	ctx.stroke();
+	ctx.fill();
+
+	//left Wristband + buckle stuff
+		ctx.fillStyle = "#13376b";	
+		ctx.beginPath ();
+		ctx.moveTo(200,415);
+		ctx.lineTo(200,430);
+		ctx.lineTo(240,450);
+		ctx.lineTo(240,430);
+		ctx.lineTo(200,410);
+	ctx.stroke();
+	ctx.fill();
+		ctx.beginPath();
+		ctx.moveTo(150,440);
+		ctx.lineTo(150,420);
+		ctx.lineTo(215,410);
+		ctx.lineTo(215,430);
+		ctx.lineTo(150,440);
+	ctx.stroke();
+	ctx.fill();
+		ctx.fillStyle = "#f2faf8";
+		ctx.beginPath()
+		ctx.moveTo(180,440);
+		ctx.lineTo(185,410);
+		ctx.lineTo(210,405);
+		ctx.lineTo(205,435);
+		ctx.lineTo(180,440);
+	ctx.stroke();
+	ctx.fill();
+		ctx.fillStyle = "#13376b";
+		ctx.lineWidth = 2;
+		ctx.beginPath();
+		ctx.moveTo(185,435);
+		ctx.lineTo(188,415);
+		ctx.lineTo(206,410);
+		ctx.lineTo(202,432);
+		ctx.lineTo(185,435);
+	ctx.stroke();
+	ctx.fill();
+	
 </script>
 </body>
 </html>
