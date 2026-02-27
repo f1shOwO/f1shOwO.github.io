@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The cake is a lie UwU</title>
+<style>
+canvas{
+	border: 3px solid black;
+}
+</style>
+
+</head>
+<body>
+	<h1>Refresh to try to get the speed of 0 UwU :3</h1>
+	<canvas id="sergal" width=600 height=400>
+	</canvas>
+<br>
+<script>
+	const canvas = document.getElementById("sergal");
+	const ctx = canvas.getContext("2d");
+
+	let x = 0;
+	let y = 0;
+	let ys = 0;
+	let xs = 0;
+
+function rand() {
+	x = Math.floor(Math.random() * 501);
+	y = Math.floor(Math.random() * 301);
+	xs = Math.floor(Math.random() * 101);
+	ys = Math.floor(Math.random() * 101);
+}
+
+function animate(){
+	requestAnimationFrame(animate);	
+	ctx.clearRect(0,0,600,400);
+
+	x += xs;
+	y += ys;
+
+	if (x + 50 > 600 || x < 0) {
+		xs = -xs;
+	}
+
+	if (y + 50 > 400 || y < 0) {
+		ys = -ys;
+	}
+
+ctx.fillStyle = color();
+ctx.fillRect(x,y,50,50);
+
+}
+
+function color() {
+	return `hsl(${Math.random() * 360}, 100%, 50%)`;
+}
+
+rand();
+animate();
+document.write("You got " + xs + " and " + ys);
+</script>
+</body>
+</html>
