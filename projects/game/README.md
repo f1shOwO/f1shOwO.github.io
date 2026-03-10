@@ -11,9 +11,7 @@ graph TD;
 	Home(((Home)))-->Outside;
 	Outside-->Street;
 	Street-->Neighbor's House;
-	Neighbor's House-->Backyard;
 	Street-->Town Square;
-	Town Square-->Store;
 	Town Square-->Fountain;
 ```
 
@@ -28,3 +26,6 @@ puzzles and overcoming obsticles.
 
 ## Global Variables
 
+The important variables are Bach and money. 
+Money allows you to get a hint from the fountain. 
+Bach decides if you can reach the end of the story.
