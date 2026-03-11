@@ -172,13 +172,19 @@ function font() {
 
 function coin() {
     clear();
-if (money > 0) {
-    print("\nYou toss a coin into the fountain. The fountain whispers 'Type Bach when you are in your home.'");
-	money += -1;
+if (money = 2) {
+    print("\nYou toss a coin into the fountain. The fountain whispers 'Go Bach to your home to find your love.'");
+	money -= 1;
+    print("\nWhere do you want to go next?" +
+        "\n\tTown Square");
+} else if (money = 1) {
+    print("\nYou toss a coin into the fountain. The fountain whispers 'Go Bach to your home to find your love.'");
+	money -= 1;
     print("\nWhere do you want to go next?" +
         "\n\tTown Square");
 } else {
-	print("You broke. :(")
+	print("You broke. :(" +
+	"\n\tTown Square")
 }
     function processInput(input){
         if (input.toLowerCase() === "town square") {
@@ -191,8 +197,6 @@ if (money > 0) {
     waitForInput(processInput);
 }
 
-//finally, make sure you customize this to tell it what should happen at the
-//very start. For this simple example, any input will bring you
 function start(){
     print("Today is Valentines Day and a single pink envolope sits on the table. Inside the evolope is a card that reads 'Come Bach My Love!' It is time to come Bach. Press any key to start:");
     bach = 0;
