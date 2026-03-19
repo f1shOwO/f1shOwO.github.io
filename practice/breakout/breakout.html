@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Title here UwU</title>
+<style>
+canvas{
+	border: 3px solid black;
+	background: #eeeeee;
+}
+</style>
+</head>
+<body>
+	<canvas id="sergal" height=480 width=320>
+	</canvas>
+<button id="runButton">Start game</button>
+<script>
+
+const canvas = document.getElementById("sergal");
+const ctx = canvas.getContext("2d");
+
+let x = 160;
+let y = 400;
+let dx = 2;
+let dy = 2;
+const paddleHeight = 10;
+const paddleWidth = 75;
+let paddleX = (canvas.width - paddleWidth) / 2;
+let rightPressed = false;
+let leftPressed = false;
+
+
+function drawBall() {
+  ctx.beginPath();
+  ctx.arc(x, y, 10, 0, Math.PI * 2);
+  ctx.fillStyle = "#0095DD";
+  ctx.fill();
+  ctx.closePath();
+}
+
+function draw() {
+  ctx.clearRect(0, 0, 400, 500);
+  drawBall();
+  drawPaddle();
+
+  if (x + dx > 310 || x + dx < 10) {
+    dx = -dx;
+  }
+  if (y + dy > 470 || y + dy < 10) {
+    dy = -dy;
+  }
+
+  x += dx;
+  y += dy;
+
+if (rightPressed) {
+  paddleX += 2;
+} else if (leftPressed) {
+  paddleX -= 2;
+}
+
+if (rightPressed) {
+  paddleX = Math.min(paddleX + 2, canvas.width - paddleWidth);
+} else if (leftPressed) {
+  paddleX = Math.max(paddleX - 2, 0);
+}
+
+}
+
+function drawPaddle() {
+  ctx.beginPath();
+  ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+  ctx.fillStyle = "#0095DD";
+  ctx.fill();
+  ctx.closePath();
+}
+
+document.addEventListener("keydown", keyDownHandler);
+document.addEventListener("keyup", keyUpHandler);
+
+function keyDownHandler(e) {
+  if (e.key === "Right" || e.key === "ArrowRight") {
+    rightPressed = true;
+  } else if (e.key === "Left" || e.key === "ArrowLeft") {
+    leftPressed = true;
+  }
+}
+
+function keyUpHandler(e) {
+  if (e.key === "Right" || e.key === "ArrowRight") {
+    rightPressed = false;
+  } else if (e.key === "Left" || e.key === "ArrowLeft") {
+    leftPressed = false;
+  }
+}
+
+function startGame() {
+  setInterval(draw, 10);
+}
+
+const runButton = document.getElementById("runButton");
+runButton.addEventListener("click", () => {
+  startGame();
+  runButton.disabled = true;
+});
+
+
+</script>
+</body>
+</html>
