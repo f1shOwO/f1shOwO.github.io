@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Why are you here?</title>
-	<style>
-		body {background-color: #b9faca;}
-	</style>   
-	<link rel="stylesheet" href="styles.css">
-		<script src="js/validate.js">
-		</script>
-	<link rel="icon" type="image/x-icon" href="media/images/ash.ico">
+ <title>Why are you here?</title>
+  <style>
+   body {background-color: #b9faca;}
+
+   .grid{
+    display: grid;
+    height: 100vh;
+    grid:
+     'head' 100px
+     'main' 1fr
+     'foot' 200px
+     /1fr;
+    }
+
+   .gridIn{
+    display: grid;
+    height: 100%;
+    grid:
+     'ref con' 1fr
+     /1fr 1fr;
+   }
+
+   #proot{
+    grid-area: head;
+   }
+
+   #synth{
+    grid-area: foot;
+   }
+
+   #reference{
+    grid-area: ref;
+   }
+
+   #contact{
+    grid-area: con;
+   }
+
+  </style>   
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="icon" type="image/x-icon" href="media/images/ash.ico">
 </head>
 
 <body> 
-	<h1 style="text-align:center;">Welcome floof :3</h1>
-	<img src="media/images/images.jpg" alt="ISawThat" usemap="#owo">
-		<map name="owo">
-			<area shape="circle" title="Le Monkey House" 
-coords="75, 60, 15" href="https://shoplemonkeyhouse.com/" alt="Le Monkey House">
-		</map>
-	<h2 style="text-align:center;">This will be a website about various indie games you should play UwU</h2>
-<br>
-	<p>Colors are under constructon. Why the <del>hell</del> are you on my website!!! Things are happening <i>UwU</i>
+<div class="grid">
+ help
+ <div id="proot">
+  proot
+ </div>
+ <div id="synth">
+  <div class="gridIn">
+   <div id="refrence">
+    <h1>Refrences:</h1>
+    <img src="media/images/egg.jpg" alt="egg" width="200" height="125">
+    <img src="media/images/egg.jpg" alt="egg" width="200" height="125">
+   </div>
+
+   <div id="contact">
+    <div class="gridIn">
+     <div id="refrence">
+      <h1>Contact Me At:</h1>
+      <h3>Email: supername@example.com</h3>
+      <h3>Phone: (123) 456 - 7890</h3>
+     </div>
+     <div id="contact">
+      <br><br><br>
+      <img src="media/images/egg.jpg" alt="egg" width="200" height="125">
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
 <hr>
-	<p>Quote for life:
-		<br><q cite="https://www.goodreads.com/quotes/1303657">Llovio, con lenitud poderosa.</q>
-<br>
-		<br> -Jorge Louis Borges</p>
-<hr>
-<br>
-	<img src="media/images/food_med.jpeg" alt="food"
-	srcset="media/images/food_large.jpeg 1600w,
-		media/images/food_med.jpeg 800w,
-		media/images/food_small.jpeg 400w"
-	sizes="(max-width: 500px) 95vw,
-		(max-width: 900px) 45vw,
-		25vw">
-	<!--Image was taken by myself, f1shOwO-->
 </body>
 </html>

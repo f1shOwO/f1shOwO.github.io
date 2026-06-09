@@ -4,10 +4,10 @@
 'https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 h1, h2, h3, h4, h5, h6, th, caption {
-	font-family: "Jacquard 12", sans-serif;
+	font-family: "Jersey 10", sans-serif;
 }
 	
-p, a, td, li, button {
+p, a, td, li, button, form {
 	font-family: "Jersey 10", sans-serif;
 }
 
