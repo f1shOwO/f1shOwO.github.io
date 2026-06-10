@@ -1,0 +1,33 @@
+.grid{
+	display: grid;
+	height: 100vh;
+	grid:
+	 'head' 100px
+	 'main' 1fr
+	 'foot' 200px
+	 /1fr;
+}
+
+.gridIn{
+	display: grid;
+	height: 100%;
+	grid:
+	 'ref con' 1fr
+	 /1fr 1fr;
+}
+
+#proot{
+	grid-area: head;
+}
+
+#synth{
+	grid-area: foot;
+}
+
+#reference{
+	grid-area: ref;
+}
+
+#contact{
+	grid-area: con;
+}

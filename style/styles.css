@@ -1,0 +1,52 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+@import url(
+'https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+h1, h2, h3, h4, h5, h6, th, caption {
+	font-family: "Jersey 10", sans-serif;
+}
+	
+p, a, td, li, button, form {
+	font-family: "Jersey 10", sans-serif;
+}
+
+table, th, td, tr {
+	border: 3px solid;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 7px;
+}
+
+body {
+	background-color:#b9faca;
+}
+
+@keyframes color-change {
+0% {color: #ff0000;}
+
+16% {color: #ffff00;}
+
+33% {color: #00ff00;}
+
+49% {color: #00ffff;}
+
+66% {color: #0000ff;}
+
+82% {color: #ff00ff;}
+
+100% { color: #ff0000;}
+}
+
+.color {
+	animation-name: color-change;
+	animation-duration: 100s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
