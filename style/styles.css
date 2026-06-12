@@ -11,6 +11,10 @@ p, a, td, li, button, form {
 	font-family: "Jersey 10", sans-serif;
 }
 
+p, a{
+	font-size: 20px;
+}
+
 table, th, td, tr {
 	border: 3px solid;
 	text-align: center;
@@ -24,8 +28,14 @@ th, td{
 	padding: 7px;
 }
 
-body {
-	background-color:#b9faca;
+body{
+	background-color: #e7d1a1;
+}
+
+.center{
+	display: block;
+	margin: auto;
+	width: 50%;
 }
 
 @keyframes color-change {

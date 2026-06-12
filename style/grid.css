@@ -16,12 +16,28 @@
 	 /1fr 1fr;
 }
 
+.gridR{
+	display: grid;
+	height: 100%;
+	grid:
+	 're re' 2fr
+	 'beA beB' 1fr
+	/1fr 1fr;
+}
+
 #proot{
 	grid-area: head;
+	background-color: #fbdb65;
 }
 
 #synth{
 	grid-area: foot;
+	background-color: #b9faca;
+}
+
+#body{
+	grid-area: main;
+	background-image: linear-gradient(#fbdb65,#b9faca); 
 }
 
 #reference{
@@ -30,4 +46,16 @@
 
 #contact{
 	grid-area: con;
+}
+
+#resu{
+	grid-area: re;
+}
+
+#bach{
+	grid-area: beA;
+}
+
+#bachB{
+	grid-area: beB
 }
