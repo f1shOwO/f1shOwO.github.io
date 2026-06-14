@@ -25,6 +25,15 @@
 	/1fr 1fr;
 }
 
+.gird{
+	display: grid;
+	height: 100%;
+	grid:
+	 'edA edB edC' 1fr
+	 'proj proj proj' 1fr
+	/1fr 1fr 1fr;
+}
+
 #proot{
 	grid-area: head;
 	background-color: #fbdb65;
@@ -66,3 +75,23 @@
 	grid-area: beB;
 	padding: 10px;
 }
+
+#haA{
+	grid-area: edA;
+	padding: 10px;
+}
+
+#haB{
+	grid-area: edB;
+	padding: 10px;
+}
+
+#haC{
+	grid-area: edC;
+	padding: 10px;
+}
+
+#pject{
+	grid-area: proj;
+	padding: 10px;
+
