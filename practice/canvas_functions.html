@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>UwU cannedfunks</title>
+</head>
+<body>
+	<h2>cannedfunks UwU</h2>
+	<canvas width=800 height=800 id="proot">
+	</canvas>
+	<script>
+	const canvas = document.getElementById("proot");
+	const ctx = canvas.getContext("2d");
+		
+	ctx.fillRect(0,0,800,800);
+	
+	function prootify(x,y,width,height,color){
+	ctx.fillStyle=color;
+	ctx.fillRect(x,y,width,height);
+	}
+	prootify(390,390,10,10,"red");
+
+	function sergalify(x,y,radius,color){
+	ctx.fillStyle=color;
+	ctx.beginPath();
+	ctx.arc(x,y,radius,0,2*Math.PI);
+	ctx.fill();
+	}
+	sergalify(50,50,10,"#99f5c8");
+
+	function kobold(x,y){
+	sergalify(x,y,50,"#99f5c8");
+	sergalify(x,y-120,75,"#99f5c8");
+	sergalify(x,y-220,100,"#99f5c8");
+	}
+	kobold(500,500);
+
+	</script>
+</body>
+</html>

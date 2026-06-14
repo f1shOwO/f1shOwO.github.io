@@ -44,6 +44,14 @@
 	ctx.stroke();
 	ctx.fill();
 
+	//left hand
+	ctx.fillStyle = "#eab89f";
+	ctx.beginPath();
+	ctx.moveTo(155,415);
+	ctx.lineTo(210,395);
+	
+	ctx.stroke();
+
 	//left Wristband + buckle stuff
 		ctx.fillStyle = "#13376b";	
 		ctx.beginPath ();
@@ -81,7 +89,31 @@
 		ctx.lineTo(185,435);
 	ctx.stroke();
 	ctx.fill();
-	
+
+	//right sleeve stuff
+		ctx.fillStyle = "#ffffff";
+		ctx.beginPath();
+		ctx.moveTo(340,501);
+		ctx.lineTo(330,475);
+		ctx.arc(380,475,50,Math.PI,2*Math.PI);
+		ctx.lineTo(440,501);
+	ctx.stroke();
+	ctx.fill();
+		ctx.fillStyle = "#13376b";
+		ctx.beginPath();
+		ctx.moveTo(340,450);
+		ctx.lineTo(340,430);
+		ctx.lineTo(360,435);
+		ctx.lineTo(370,435);
+		ctx.lineTo(400,415);
+		ctx.lineTo(395,410);
+		ctx.lineTo(410,415);
+		ctx.lineTo(405,435);
+		ctx.lineTo(375,455);
+		ctx.lineTo(340,450);
+	ctx.stroke();
+	ctx.fill();
+
 </script>
 </body>
 </html>
