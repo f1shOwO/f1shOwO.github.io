@@ -35,7 +35,6 @@ body{
 .center{
 	display: block;
 	margin: auto;
-	width: 50%;
 }
 
 @keyframes color-change {
